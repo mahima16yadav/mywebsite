@@ -1,0 +1,124 @@
+/* Pricing.css */
+.pricing-section {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .pricing-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-section p {
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .card h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .card h3 span {
+    font-size: 1rem;
+    color: black;
+  }
+  
+  .card p {
+    margin: 0.5rem 0;
+  }
+  
+  .card .cta-btn {
+    margin: 15px 0;
+    font-size: 1.2em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .card .cta-btn:hover {
+    background-color: #f76c1b;
+    color: white;
+  }
+  
+  .card .cta-btn .arrow {
+    margin-left: 0.5rem;
+  }
+  
+  .card .features {
+    margin-top: 1rem;
+  }
+  
+  .card .features p {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+  
+  .card .features .tick {
+    color: black;
+    margin-right: 0.5rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    background-color: #f76c1b;
+    color: white;
+  }
+  
+  .card:hover h2,
+  .card:hover h3,
+  .card:hover h3 span,
+  .card:hover p,
+  .card:hover .features p,
+  .card:hover .features .tick {
+    color: white;
+  }
+  
+  .card:hover .cta-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+  }
+  
+  .card:hover .cta-btn .arrow {
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
